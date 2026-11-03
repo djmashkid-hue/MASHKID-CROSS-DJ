@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#090b14">
+<title>MASHKID CROSS DJ</title>
+<link rel="manifest" href="manifest.json">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header><div class="brand">MASHKID <span>CROSS DJ</span></div><div class="tag">THE FEARLESS MIX</div></header>
+<main>
+  <section class="decks">
+    <article class="deck" id="deckA">
+      <h2>DECK A</h2><label class="load">LOAD AUDIO / VIDEO<input id="fileA" type="file" accept="audio/*,video/*"></label>
+      <div class="screen"><video id="mediaA" playsinline controls></video><div class="empty" id="emptyA">DECK A<br><small>Choose a local track</small></div></div>
+      <div class="track" id="nameA">No track loaded</div>
+      <div class="controls"><button id="playA">▶ PLAY</button><button id="pauseA">Ⅱ PAUSE</button><button id="stopA">■ STOP</button></div>
+      <label>VOLUME <input id="volA" type="range" min="0" max="1" step=".01" value="1"></label>
+    </article>
+    <article class="deck" id="deckB">
+      <h2>DECK B</h2><label class="load">LOAD AUDIO / VIDEO<input id="fileB" type="file" accept="audio/*,video/*"></label>
+      <div class="screen"><video id="mediaB" playsinline controls></video><div class="empty" id="emptyB">DECK B<br><small>Choose a local track</small></div></div>
+      <div class="track" id="nameB">No track loaded</div>
+      <div class="controls"><button id="playB">▶ PLAY</button><button id="pauseB">Ⅱ PAUSE</button><button id="stopB">■ STOP</button></div>
+      <label>VOLUME <input id="volB" type="range" min="0" max="1" step=".01" value="1"></label>
+    </article>
+  </section>
+  <section class="mixer">
+    <h2>MAIN MIXER</h2>
+    <label class="cross">CROSSFADER <span>A</span><input id="cross" type="range" min="0" max="100" value="50"><span>B</span></label>
+    <p id="mixStatus">Move the crossfader between Deck A and Deck B.</p>
+  </section>
+  <p class="note">Works with audio and video files stored on your phone. Keep this page open while mixing. Headphone cueing and professional beat-sync are not included in this starter version.</p>
+</main>
+<footer>© MASHKID CROSS DJ · THE FEARLESS</footer>
+<script src="app.js"></script>
+</body></html>
